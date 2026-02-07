@@ -1,0 +1,32 @@
+================================================================================
+EXPLORATORY ANALYSIS SUMMARY REPORT
+================================================================================
+
+DATASET OVERVIEW
+--------------------------------------------------------------------------------
+Total samples: 26,938
+Number of studies: 391
+Unique species detected: 25,003
+Metadata variables: 30
+
+
+STUDY DISTRIBUTION
+--------------------------------------------------------------------------------
+Min samples per study: 1
+Max samples per study: 1579
+Mean samples per study: 68.9
+Median samples per study: 30
+Gini coefficient: -0.639
+
+
+MISSING DATA
+--------------------------------------------------------------------------------
+Variables with >50% missing: 10
+Variables with no missing data: 11
+
+
+QUALITY METRICS
+--------------------------------------------------------------------------------
+Duplicate sample IDs: 0
+Potential longitudinal series: 64
+Mean species per sample: 97.7

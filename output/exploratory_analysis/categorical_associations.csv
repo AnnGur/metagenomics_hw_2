@@ -1,0 +1,11 @@
+Variable1,Variable2,Cramers_V,Chi2,P_value,N_samples,Significant
+artificial,filtration_upper_threshold_um,0.6404259245470979,462.6439715305018,8.020996935320911e-99,564,True
+artificial,filtration_lower_threshold_um,0.6317012463550034,462.893898989899,7.0825692920834765e-99,580,True
+environmental_package,filtration_lower_threshold_um,0.38840469009448286,1417.4636780883284,1.316213893557059e-274,2349,True
+location_resolution,filtration_lower_threshold_um,0.3872943657612066,1057.0283357628948,1.9260260072998972e-205,2349,True
+environmental_package,artificial,0.3624388706835913,3220.3378360934626,0.0,4903,True
+filtration_lower_threshold_um,filtration_upper_threshold_um,0.35821111138046885,2574.131233547915,0.0,2229,True
+location_resolution,environmental_package,0.3504353639389641,19848.717537164302,0.0,26938,True
+location_resolution,filtration_upper_threshold_um,0.3440063217187153,821.5187054129003,5.68231959300893e-136,2314,True
+location_resolution,artificial,0.2567048562127817,1615.474349227059,0.0,4903,True
+environmental_package,filtration_upper_threshold_um,0.19878106397384035,365.7407638681586,1.7314279753670117e-39,2314,True

@@ -1,0 +1,71 @@
+================================================================================
+URBAN MICROBIOME ANALYSIS: ECONOMIC STRATIFICATION STUDY
+================================================================================
+
+RESEARCH QUESTION:
+How does urban microbiome composition differ between high-income and
+upper-middle-income countries?
+
+================================================================================
+STUDY DESIGN
+================================================================================
+
+CONTROL GROUP: High-income countries
+  Countries: Denmark, Singapore, USA
+  N samples: 1247
+  Rationale: Established urban infrastructure, advanced sanitation
+
+CASE GROUP: Upper-middle-income countries
+  Countries: China
+  N samples: 170
+  Rationale: Transitional economies, variable infrastructure
+
+PREPROCESSING:
+  - Filtered to urban biome samples only
+  - Removed species present in <5% of samples
+  - Final dataset: 1417 samples, 561 species
+
+================================================================================
+KEY FINDINGS
+================================================================================
+
+1. ALPHA DIVERSITY
+----------------------------------------
+
+Richness:
+  Control: 51.149
+  Case:    71.641
+  Difference: +20.492 (+40.1%)
+  P-value: 0.0000 (SIGNIFICANT)
+
+Shannon:
+  Control: 1.363
+  Case:    2.040
+  Difference: +0.677 (+49.6%)
+  P-value: 0.0000 (SIGNIFICANT)
+
+Simpson:
+  Control: 0.500
+  Case:    0.601
+  Difference: +0.101 (+20.1%)
+  P-value: 0.0000 (SIGNIFICANT)
+
+2. BETA DIVERSITY
+----------------------------------------
+
+PCA variance explained:
+  PC1: 21.71%
+  PC2: 6.15%
+  Total (PC1-5): 36.30%
+
+Bray-Curtis dissimilarity:
+  Within Control:  nan
+  Within Case:     nan
+  Between groups:  nan
+
+3. DIFFERENTIAL ABUNDANCE
+----------------------------------------
+
+Significant species (FDR q<0.05): 529
+  Enriched in Case: 124
+  Enriched in Control: 405
