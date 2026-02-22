@@ -1,7 +1,7 @@
 # Large data files - run notebook to regenerate
-output/exploratory_analysis/abundance_matrix_wide.csv
-input/environmental_metaphlan4_species_2026-02-01.tsv
-input/environmental_core_wide_2026-02-01.tsv
+output/**/*.csv
+input/environmental_metaphlan4_species_*.tsv
+input/environmental_core_wide_*.tsv
 
 # Python
 __pycache__/

@@ -1,0 +1,82 @@
+================================================================================
+MICROBIOME-WIDE ASSOCIATION STUDY (MWAS) - SUMMARY
+================================================================================
+
+OBJECTIVE
+--------------------------------------------------------------------------------
+
+Identify species-level associations between urban microbiome composition
+and economic development (USA vs Upper-middle-income) while accounting
+for geographic confounders.
+
+METHODOLOGY
+--------------------------------------------------------------------------------
+
+Approach: Linear regression (two models per species)
+  Model 1 (Unadjusted): CLR ~ Group
+  Model 2 (Adjusted):   CLR ~ Group + Latitude + Elevation
+
+Sample size: 135 samples with complete covariate data
+  USA (Control): 29
+  Upper-middle (Case): 106
+
+Species tested: 134
+Multiple testing correction: FDR (Benjamini-Hochberg)
+Significance threshold: FDR q < 0.05
+
+================================================================================
+KEY FINDINGS
+================================================================================
+
+1. ROBUST ECONOMIC ASSOCIATIONS:
+   Species: 0 (0.0%)
+   Interpretation: TRUE economic effects, independent of geography
+
+2. GEOGRAPHIC CONFOUNDING:
+   Species: 86 (64.2%)
+   Interpretation: Associations were GEOGRAPHIC, not economic
+
+3. SUPPRESSOR EFFECTS:
+   Species: 0 (0.0%)
+   Interpretation: Economic effect was masked by geography
+
+4. NO ASSOCIATION:
+   Species: 48 (35.8%)
+   Interpretation: No significant differences
+
+================================================================================
+BIOLOGICAL INTERPRETATION
+================================================================================
+
+No significant associations found after FDR correction.
+Geographic factors dominate over economic effects.
+
+================================================================================
+FILES GENERATED
+================================================================================
+
+1. mwas_results_all_species.csv - Complete regression results
+2. mwas_results_robust_associations.csv - Significant species only
+3. manhattan_plot_mwas.png - Visual summary of associations
+4. top_species_boxplots.png - Distribution comparisons
+5. top_species_statements.csv - Formatted biological statements
+6. mwas_summary.txt - This summary
+
+================================================================================
+CONCLUSIONS
+================================================================================
+
+LIMITED ECONOMIC SIGNAL DETECTED:
+
+- Only 0.0% of species show robust economic associations
+- Geographic factors appear to dominate over economic effects
+- USA vs East Asia comparison is primarily geographic
+- Economic development effects are modest
+
+SEVERE GEOGRAPHIC CONFOUNDING:
+
+- 64.2% of associations were confounded
+- Unadjusted analyses would be highly misleading
+- Covariate adjustment was essential for valid inference
+- Results highlight importance of controlling for geography
+

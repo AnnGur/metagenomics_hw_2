@@ -1,0 +1,94 @@
+================================================================================
+DATA PREPROCESSING AND TRANSFORMATION SUMMARY
+================================================================================
+
+STUDY DESIGN
+--------------------------------------------------------------------------------
+
+Control (USA):           588 samples
+Case (Upper-middle):     170 samples
+Total:                   758 samples
+
+CONFOUNDER ASSESSMENT
+--------------------------------------------------------------------------------
+
+Latitude:
+  Difference: -3.20
+  P-value: 0.0120
+  Severity: MILD
+
+Longitude:
+  Difference: +212.64
+  P-value: 0.0000
+  Severity: SEVERE
+
+Elevation:
+  Difference: -557.27
+  P-value: 0.0000
+  Severity: SEVERE
+
+INTERPRETATION:
+Results reflect BOTH economic development AND geographic differences.
+Findings should be framed as 'USA vs East Asian' comparison.
+
+TAXONOMIC LEVEL SELECTION
+--------------------------------------------------------------------------------
+
+Selected: SPECIES level
+
+Rationale:
+  1. Ecological specificity - different species have distinct functions
+  2. Statistical power - large dataset supports species resolution
+  3. Biological relevance - infrastructure affects specific species
+  4. Comparability - standard for urban microbiome studies
+
+FILTERING CRITERIA
+--------------------------------------------------------------------------------
+
+Initial species:         4,848
+
+Stage 1 - Prevalence Filter:
+  Threshold: ≥10% of samples (≥75 samples)
+  Rationale: Remove rare/transient species
+  Passed: 134 species
+  Removed: 4,714 species
+
+Stage 2 - Abundance Filter:
+  Threshold: Mean ≥0.01% relative abundance
+  Rationale: Remove ultra-low abundance species
+  Passed: 134 species
+  Removed: 0 species
+
+Final retained:          134 species (2.8%)
+Total removed:           4,714 species
+
+COMPOSITIONAL DATA ANALYSIS
+--------------------------------------------------------------------------------
+
+Transformation: Centered Log-Ratio (CLR)
+
+Rationale:
+  - Accounts for compositional nature of microbiome data
+  - Prevents spurious correlations
+  - Enables use of standard statistical methods
+  - Recommended by compositional data analysis literature
+
+Implementation:
+  1. Added pseudocount (1e-6) to handle zeros
+  2. Calculated geometric mean per sample
+  3. Log-transformed ratio to geometric mean
+  4. Verified: Mean CLR ≈ -0.000 (expected ~0)
+
+READY FOR DOWNSTREAM ANALYSIS
+--------------------------------------------------------------------------------
+
+Data matrices prepared:
+  - CLR-transformed abundances: 758 × 134
+  - Metadata with covariates: 758 samples
+  - Alignment verified: ✓
+
+Next steps:
+  1. Alpha diversity analysis
+  2. Beta diversity (PCA on CLR data)
+  3. Differential abundance (on CLR values)
+  4. Covariate correlation assessment

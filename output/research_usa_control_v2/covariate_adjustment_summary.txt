@@ -1,0 +1,64 @@
+================================================================================
+COVARIATE-ADJUSTED ANALYSIS SUMMARY
+================================================================================
+
+RESEARCH QUESTION:
+Are microbiome differences due to ECONOMIC development or GEOGRAPHIC location?
+
+CONFOUNDERS IDENTIFIED:
+  - Latitude: -3.20° (p=0.012)
+  - Longitude: +212.64° (p<0.001) - SEVERE
+  - Elevation: -557m (p<0.001) - SEVERE
+
+================================================================================
+ANALYSIS APPROACH
+================================================================================
+
+1. CORRELATION TEST:
+   Geographic covariates DO affect microbiome composition
+   Significant correlations: 4
+
+2. SAMPLE MATCHING:
+   Criteria: Latitude ± 5.0°, Elevation ± 500.0m
+   Matched pairs: 12
+   Match rate: 11.3% of case samples
+
+3. STATISTICAL ADJUSTMENT:
+   Method: Linear regression with covariates
+   Species tested: 134
+   FDR correction applied
+
+================================================================================
+KEY FINDINGS
+================================================================================
+
+1. ROBUST ECONOMIC EFFECTS: 100 species (74.6%)
+   → Significant AFTER controlling for geography
+   → TRUE economic differences, independent of location
+   → Can confidently attribute to income-related factors
+
+2. GEOGRAPHIC CONFOUNDING: 4 species (3.0%)
+   → Significant BEFORE but NOT AFTER adjustment
+   → Differences were GEOGRAPHIC, not economic
+   → Cannot attribute to economic development
+
+3. SUPPRESSOR EFFECTS: 1 species (0.7%)
+   → NOT significant before, SIGNIFICANT after adjustment
+   → Economic effect was masked by geographic variation
+
+4. NO DIFFERENCE: 29 species (21.6%)
+   → Not significant in either model
+
+================================================================================
+INTERPRETATION
+================================================================================
+
+SUBSTANTIAL ECONOMIC SIGNAL:
+  74.6% of species show robust economic effects
+  Economic development DOES affect urban microbiome composition
+  Effects are independent of geographic location
+
+CONCLUSION:
+  Economic development effects are REAL and detectable
+  But geographic factors also play a significant role
+  Both mechanisms contribute to observed patterns
