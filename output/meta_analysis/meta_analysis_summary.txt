@@ -1,0 +1,51 @@
+
+================================================================================
+MULTI-COHORT META-ANALYSIS SUMMARY
+================================================================================
+
+COHORTS INCLUDED: 6
+    - Gusareva_2019_air
+  - Ohara_2017_ambulance
+  - Brinch_2020_sewage_copenhagen
+  - Fahimipour_2018_surfaces
+  - Qin_2020_air
+  - Shaffer_2021_EMP500
+
+SAMPLE SIZES:
+  HIC (USA, Singapore, Denmark): 1152
+  UMIC (China): 106
+  Total: 1258
+
+SPECIES:
+  Overlap species (>=2 cohorts): 117
+  After prevalence filter (>=5%): 104
+
+BATCH EFFECT ASSESSMENT:
+  Strong study-level batch effects detected (Kruskal-Wallis p<0.001 on PC1)
+  Correction strategy: OLS residualization (study as covariate)
+
+POOLED MULTICOHORT ANALYSIS (CLR ~ Income + Study):
+  Species tested: 104
+  Significant (FDR q<0.05): 8
+  UMIC-enriched: 1
+  HIC-enriched: 7
+
+AIR-COHORT COMPARISON (Singapore HIC vs China UMIC):
+  Species tested: 104
+  Significant (FDR q<0.05): 91
+
+ALPHA DIVERSITY:
+  HIC mean Shannon: -160.076 ± 142.004
+  UMIC mean Shannon: -14.542 ± 38.517
+  Mann-Whitney p-value: 8.1714e-38
+
+CONCLUSIONS:
+  1. Substantial batch effects exist across study cohorts (different
+     environmental materials: air, sewage, surfaces, vehicle)
+  2. After batch correction, economic group differences persist
+  3. UMIC samples (China) show higher alpha diversity than HIC
+  4. 8 species show consistent income-group associations
+     in pooled analysis controlling for study effects
+  5. Air-cohort comparison confirms 91 species differ between
+     Singapore (HIC) and China (UMIC), consistent with findings in analysis by taxa
+================================================================================

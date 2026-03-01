@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(/opt/homebrew/bin/python3.12 -m pip install pandas numpy scipy matplotlib seaborn scikit-learn statsmodels)",
+      "Bash(/opt/homebrew/bin/python3.12 -m pip install pandas numpy scipy matplotlib seaborn scikit-learn statsmodels --break-system-packages)",
+      "Bash(/opt/homebrew/bin/python3.12 -m pip install scipy --break-system-packages)",
+      "Bash(/opt/homebrew/bin/python3.12 -c \"import pandas as pd; import scipy; import statsmodels; print\\(''All imports OK''\\)\")",
+      "Bash(/opt/homebrew/bin/python3.12:*)",
+      "Bash(ls output/research/*.png output/research_usa_control_v2/*.png output/meta_analysis/*.png)",
+      "Bash(pdflatex -interaction=nonstopmode summary_report.tex)",
+      "Bash(ls summary_report.*)",
+      "Bash(pdflatex -interaction=batchmode summary_report.tex)",
+      "Bash(echo \"EXIT: $?\")",
+      "Bash(ls *.tex *.pdf)"
+    ],
+    "additionalDirectories": [
+      "/Users/anna_gurina/Desktop/KSE_Bioinformatics/Metagenomics/metagenomics_hw_2",
+      "/Users/anna_gurina/.claude/projects/-Users-anna-gurina-Desktop-KSE-Bioinformatics-Metagenomics-metagenomics-hw-2/memory"
+    ]
+  }
+}
